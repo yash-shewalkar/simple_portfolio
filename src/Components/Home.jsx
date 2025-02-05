@@ -1,8 +1,8 @@
 /**
  * Home component
  *
- * The section at the top of the page to display image of your
- * choice, name and title that describes your career focus.
+ * The section at the top of the page to display an image of your
+ * choice, name, and title that describes your career focus.
  */
 
 import React from "react";
@@ -13,9 +13,8 @@ import PropTypes from "prop-types";
  * Home background image
  *
  * Below is a sample image. Upload the image of your choice into the "images"
- * directory and import here for use. Then, set imageAltText to string that 
+ * directory and import here for use. Then, set imageAltText to a string that 
  * represents what you see in that image.
- *
  *
  * Need an image? Check out https://unsplash.com to download a photo you
  * freely use on your site.
@@ -25,15 +24,29 @@ import image from "../images/woman-with-tablet.jpg";
 const imageAltText = "Adult female in office setting leaning against a glass wall while holding a platinum Microsoft Surface Pro 7 in tablet mode preparing to write with Microsoft Surface Pen";
 
 const Home = ({ name, title }) => {
+  const handleScroll = () => {
+    const aboutSection = document.getElementById("about");
+    if (aboutSection) {
+      aboutSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <section id="home" className="min-height">
-      <img className="background" src={image} alt="" />
+      <img className="background" src={image} alt={imageAltText} />
       <div style={{ position: "absolute", top: "5rem", left: "2rem", width: "17rem" }}>
         <h1>{name}</h1>
         <h2>{title}</h2>
       </div>
-      <div style={{ position: "absolute", bottom: "3rem", left: "50%" }}>
-        <img src={arrowSvg} style={{ height: "3rem", width: "3rem" }} alt={imageAltText} />
+      <div
+        style={{ position: "absolute", bottom: "3rem", left: "50%", transform: "translateX(-50%)" }}
+      >
+        <button
+          onClick={handleScroll}
+          style={{ background: "none", border: "none", padding: 0, cursor: "pointer" }}
+        >
+          <img src={arrowSvg} style={{ height: "3rem", width: "3rem" }} alt="Scroll down" />
+        </button>
       </div>
     </section>
   );

@@ -5,8 +5,16 @@
  * user scrolls so that they can constantly reach any part of your page.
  */
 import React from "react";
+import { Link } from 'react-scroll';
 
 const Header = () => {
+  const handleScroll = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div
       style={{
@@ -21,10 +29,10 @@ const Header = () => {
         zIndex: 10,
       }}
     >
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#portfolio">Portfolio</a>
-      <a href="#footer">Contact</a>
+      <Link to="home" smooth={true} duration={500}>Home</Link>
+      <Link to="about" smooth={true} duration={500}>About</Link>
+      <Link to="portfolio" smooth={true} duration={500}>Portfolio</Link>
+      <Link to="footer" smooth={true} duration={500}>Contact</Link>
     </div>
   );
 };

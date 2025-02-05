@@ -31,28 +31,28 @@ const imageAltText = "desktop with books and laptop";
  */
 const projectList = [
   {
-    title: "10 Things To Know About Azure Static Web Apps 🎉",
+    title: "ANPR System for Apartments",
     description:
-      "Collaboration to create a beginner friendly article to help explain Azure Static Web Apps and tooling to get started.",
-    url: "https://dev.to/azure/10-things-to-know-about-azure-static-web-apps-3n4i",
+      "Developed a real-time number plate detection system using Python, STREAMLIT, and OpenCV, featuring EASYOCR for character recognition and Firebase for data verification. Implemented a QR-code scanning feature for quick registration, achieving verification in under 2 seconds.",
+    url: "https://github.com/yash-shewalkar/ANPR-System-for-Apartments",
   },
   {
-    title: "Web Development for Beginners",
+    title: "Streaming-Summarizer",
     description:
-      "Contributed sketch note imagery to accompany each lesson. These help provide visual representation of what is being taught.",
-    url: "https://github.com/microsoft/web-dev-for-beginners",
+      "Contributed to a full-stack web application that summarizes YouTube videos using Python, Flask, and React Enhanced the UI with a responsive design and live chat feature.",
+    url: "https://github.com/yash-shewalkar/Streaming-Summarizer",
   },
   {
-    title: "My Resume Site",
+    title: "My image gallery",
     description:
-      "Created from Microsoft's resume workshop and deployed to GitHub pages. Includes my experience and design abilities.",
-    url: "https://github.com/microsoft/workshop-library/tree/main/full/build-resume-website",
+      "Developed a full-stack image gallery application using NodeJS, Express, and MongoDB and Masonry layout.",
+    url: "https://github.com/yash-shewalkar/my-image-gallery",
   },
   {
-    title: "GitHub Codespaces and github.dev",
+    title: "My Portfolio Website",
     description:
-      "Video interview to explain when to use GitHub.dev versus GitHub Codespaces, and how best to use each tool.",
-    url: "https://www.youtube.com/watch?v=c3hHhRME_XI",
+      "Built with Next.js and React.js, integrating NextAuth for secure Google authentication and NodeMailer for handling contact form submissions. Enhanced the UI with a floating dock featuring animated effects using Framer Motion and Aceternity UI.",
+    url: "https://github.com/yash-shewalkar/My-Portfolio-Website",
   },
 ];
 
